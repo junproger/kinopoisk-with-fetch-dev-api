@@ -1,4 +1,7 @@
-window.addEventListener('DOMContentLoaded', function () {
+import { App } from './components/App/App';
+
+window.addEventListener('DOMContentLoaded', function (): void {
   // eslint-disable-next-line no-console
-  console.log('movieApp started');
+  console.log('OPEN MOVIE PORTAL');
+  return App();
 });
