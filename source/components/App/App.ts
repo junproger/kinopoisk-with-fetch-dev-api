@@ -1,9 +1,7 @@
 import { ROOT } from '../../constants/root';
 
-export const App = (): void => {
-  const H1: HTMLHeadingElement = document.createElement('h1');
-  H1.className = 'title';
-  H1.textContent = 'OPEN MOVIE PORTAL';
+import { Header } from '../View/Header/Header';
 
-  ROOT.append(H1);
+export const App = (): void => {
+  ROOT.append(Header());
 };
