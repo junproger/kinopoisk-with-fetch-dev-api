@@ -1,0 +1,10 @@
+.movies {
+  width: auto;
+  display: grid;
+  gap: 10px;
+}
+
+.grids {
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+}

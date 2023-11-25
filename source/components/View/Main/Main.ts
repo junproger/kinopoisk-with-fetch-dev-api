@@ -1,5 +1,7 @@
 import { Conponent } from '../../../typing/Component';
 
+import { Movies } from '../Movies/Movies';
+
 import * as styles from './main.module.css';
 
 export const Main: Conponent = () => {
@@ -11,5 +13,6 @@ export const Main: Conponent = () => {
     </div>
   `;
   MAIN.innerHTML = CHILD;
+  MAIN.append(Movies());
   return MAIN;
 };
