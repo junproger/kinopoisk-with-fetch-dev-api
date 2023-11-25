@@ -2,9 +2,9 @@
   width: 100%;
   color: #68e;
   box-shadow: 0 0 32px black;
-  background-image: linear-gradient(35deg, transparent 35%, lavender 50%, transparent 65%);
+  background-size: 150% 100%;
   background-position: 50% 50%;
-  background-size: 200% 100%;
+  background-image: linear-gradient(35deg, transparent 35%, lavender 50%, transparent 65%);
   animation: 5s linear diagonal;
 }
 
@@ -19,18 +19,21 @@
   0% {
       background-position: -50% 50%;
   }
-  25% {
+  20% {
       color: #34b;
       background-position: 50% 50%;
   }
-  50% {
+  40% {
       background-position: 150% 50%;
   }
-  75% {
+  60% {
       color: #34b;
       background-position: 50% 50%;
   }
-  100% {
+  80% {
       background-position: -50% 50%;
+  }
+  100% {
+      background-position: 50% 50%;
   }
 }
