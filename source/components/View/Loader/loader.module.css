@@ -1,0 +1,41 @@
+.loader {
+  width: 240px;
+  height: 240px;
+  margin: 50px auto;
+  border-width: 24px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: wheat;
+  background-color: transparent;
+  border-right-color: transparent;
+  -webkit-animation: spiner 2s linear infinite;
+  -moz-animation: spiner 2s linear infinite;
+  animation: 2s linear infinite alternate spinner;
+}
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spinner {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
