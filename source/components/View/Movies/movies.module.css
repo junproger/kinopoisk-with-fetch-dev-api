@@ -5,6 +5,7 @@
 }
 
 .grids {
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  border: 1px solid wheat;
 }
