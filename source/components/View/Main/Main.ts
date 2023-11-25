@@ -9,7 +9,7 @@ export const Main: Conponent = () => {
   MAIN.className = <string>styles['main'];
   const CHILD = `
     <div>
-        <h2>Welcome to Open Movie!</h2>
+        <h2>Welcome to Open Movies Portal!</h2>
     </div>
   `;
   MAIN.innerHTML = CHILD;
