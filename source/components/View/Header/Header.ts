@@ -7,7 +7,7 @@ export const Header: Conponent = () => {
   HEADER.className = <string>styles['header'];
   const H1: HTMLHeadingElement = document.createElement('h1');
   H1.className = <string>styles['title'];
-  H1.textContent = 'OPEN MOVIE PORTAL';
+  H1.textContent = 'OPEN MOVIES PORTAL';
   HEADER.append(H1);
   return HEADER;
 };
