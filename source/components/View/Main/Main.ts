@@ -15,9 +15,10 @@ export const Main: Conponent = () => {
   `;
   MAIN.innerHTML = CHILD;
   MAIN.append(Loader());
+  const MOVIES = Movies();
   setTimeout(() => {
     MAIN.lastChild?.remove();
-    MAIN.append(Movies());
-  }, 4000);
+    MAIN.append(MOVIES);
+  }, 4200);
   return MAIN;
 };
