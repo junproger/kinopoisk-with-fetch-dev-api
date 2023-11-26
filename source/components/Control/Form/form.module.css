@@ -20,7 +20,18 @@
   padding-left: 5px;
 }
 
+.name:invalid,
+.phone:invalid {
+  outline: 2px solid lightcoral;
+}
+
+.name:valid,
+.phone:valid {
+  outline: 2px solid lightgreen;
+}
+
 .button {
+  outline: 3px solid indigo;
   width: 15vmin;
-  height: 7vmin;
+  height: 7.5vmin;
 }
