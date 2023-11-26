@@ -8,8 +8,9 @@ export const Item: ConponentWithProp = (prop) => {
   ITEM.className = <string>styles['item'];
   const IMG: HTMLImageElement = document.createElement('img');
   IMG.className = <string>styles['poster'];
-  IMG.alt = 'poster';
   IMG.src = <string>prev;
+  IMG.title = `${name}`;
+  IMG.alt = `${name}`;
   ITEM.append(IMG);
   const H3: HTMLHeadingElement = document.createElement('h3');
   H3.className = <string>styles['title'];
