@@ -1,0 +1,13 @@
+.logo {
+  width: auto;
+  height: auto;
+  padding: 0 0 10px;
+  margin: 0 5%;
+}
+
+.omimg {
+  max-width: 12vmin;
+  max-height: 12vmin;
+  padding: 0;
+  margin: 0;
+}
