@@ -3,6 +3,7 @@ export const MovieApiMap = {
   APIVERS: 'v1.4',
   APIPATH: 'movie',
   METHOD: 'GET',
+  HEADERS: { 'X-API-KEY': 'P3RTS9G-2YH4XAV-QWKVWAZ-E9XFFDQ', Accept: 'application/json' },
   REQUEST: 'https://api.kinopoisk.dev/v1.4/movie?rating.imdb=8-10&limit=32&page=1',
   QUERIES: {
     page: 'page=1',
