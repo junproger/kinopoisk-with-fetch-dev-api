@@ -3,10 +3,10 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .welcome {
-  font-size: 5vmax;
-  margin: 0 0 24px;
+  font-size: 10vmin;
+  margin: 16px 0 24px;
 }
