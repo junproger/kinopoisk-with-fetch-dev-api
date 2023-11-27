@@ -39,7 +39,7 @@ export const Form: Conponent = () => {
     required: true,
   });
   TEL.oninput = (): void =>
-    TEL.validity.patternMismatch ? TEL.setCustomValidity('INPUT IN FORMAT +7(123)4567890') : TEL.setCustomValidity('');
+    TEL.validity.patternMismatch ? TEL.setCustomValidity('INPUT FORMAT +7(123)4567890') : TEL.setCustomValidity('');
   FORM.append(TEL);
   const BTN = Object.assign(document.createElement('input'), {
     id: 'button',
