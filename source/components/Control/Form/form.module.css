@@ -1,15 +1,16 @@
 .form {
-  width: 50vw;
+  width: auto;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  margin: 0 5% 20px 0;
+  gap: 20px;
 }
 
 .name,
 .phone {
-  width: 25vmin;
+  width: 28vmin;
   height: 7vmin;
 }
 
@@ -32,6 +33,6 @@
 
 .button {
   outline: 3px solid indigo;
-  width: 15vmin;
+  width: 16vmin;
   height: 7.5vmin;
 }
