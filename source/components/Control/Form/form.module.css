@@ -4,13 +4,13 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  margin: 0 5% 20px 0;
+  margin-bottom: 20px;
   gap: 20px;
 }
 
 .name,
 .phone {
-  width: 28vmin;
+  width: 30vmin;
   height: 7vmin;
 }
 
@@ -33,6 +33,6 @@
 
 .button {
   outline: 3px solid indigo;
-  width: 16vmin;
+  width: 20vmin;
   height: 7.5vmin;
 }
