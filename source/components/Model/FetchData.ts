@@ -11,7 +11,6 @@ export const FetchData = (callback: (data: DefaultRespType) => void): Promise<De
     .then((resp) => resp.json())
     .then((data: DefaultRespType) => {
       callback(data);
-      logging(data);
       return data;
     })
     .catch((error) => {
