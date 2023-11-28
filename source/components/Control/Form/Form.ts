@@ -1,5 +1,7 @@
 import { Conponent } from '../../../typing/Component';
 
+import { isValid } from '../../../helpers/isValid';
+
 import * as styles from './form.module.css';
 
 export const Form: Conponent = () => {
@@ -9,10 +11,14 @@ export const Form: Conponent = () => {
   FORM.className = <string>styles['form'];
   FORM.onsubmit = (event: SubmitEvent): void => {
     event.preventDefault();
-    alert('Success!');
+    const CLASS = `.${<string>styles['phone']}`;
+    const INPUT: HTMLInputElement | null = FORM.querySelector(CLASS);
+    if (isValid(INPUT?.value)) {
+      alert('Success!');
+      // FORM.submit();
+    }
   };
   const NAME = Object.assign(document.createElement('input'), {
-    id: 'name',
     type: 'text',
     name: 'name',
     autocomplete: 'off',
@@ -26,7 +32,6 @@ export const Form: Conponent = () => {
   });
   FORM.append(NAME);
   const TEL = Object.assign(document.createElement('input'), {
-    id: 'phone',
     type: 'tel',
     name: 'phone',
     autocomplete: 'off',
@@ -42,7 +47,6 @@ export const Form: Conponent = () => {
     TEL.validity.patternMismatch ? TEL.setCustomValidity('INPUT FORMAT +7(123)4567890') : TEL.setCustomValidity('');
   FORM.append(TEL);
   const BTN = Object.assign(document.createElement('input'), {
-    id: 'button',
     type: 'submit',
     name: 'button',
     className: `${<string>styles['button']}`,
