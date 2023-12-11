@@ -18,9 +18,9 @@ body,
   height: 100%;
   background-color: #309;
   background-image: url('./assets/background.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: top left;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
   font-family: sans-serif;
   margin: 0;
 }
