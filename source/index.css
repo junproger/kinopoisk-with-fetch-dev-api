@@ -19,6 +19,7 @@ body,
   background-color: #309;
   background-image: url('./assets/background.svg');
   background-position: top left;
+  background-attachment: fixed;
   background-repeat: repeat-y;
   background-size: 100% auto;
   font-family: sans-serif;
